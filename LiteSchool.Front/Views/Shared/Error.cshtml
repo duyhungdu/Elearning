@@ -1,0 +1,11 @@
+﻿@using Core.ViewModels
+@model HandleErrorVM
+@{
+    ViewBag.Title = "Error";
+    Layout = null;
+}
+
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request : @Model.ControllerName/@Model.ActionName</h2>
+<h2 class="text-danger">Ticket ID : @Model.Ticket </h2>
