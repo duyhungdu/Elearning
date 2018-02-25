@@ -21,7 +21,7 @@ namespace LiteSchool.Front.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("ModernMenConnection", throwIfV1Schema: false)
+            : base("LiteSchoolConnection", throwIfV1Schema: false)
         {
         }
 

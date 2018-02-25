@@ -1,22 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using StructureMap;
 using StructureMap.Pipeline;
-using StructureMap.Web.Pipeline;
 using LiteSchool.Library.Logging;
-using LiteSchool.Library.Structuremap;
-using LiteSchool.Entities;
-using LiteSchool.Dtos;
 using LiteSchool.Library.Cache;
 using System.Runtime.Caching;
-using LiteSchool.Presentation;
-using LiteSchool.Core.IPresentation;
 using LiteSchool.Core.IServices;
-using LiteSchool.Core.Factories;
 using LiteSchool.Library.Helpers;
-using AutoMapper;
 
 namespace LiteSchool.Assembler
 {
@@ -46,7 +35,7 @@ namespace LiteSchool.Assembler
                     });
                 AutoMapperConfig.CreateMappings();
 
-                  // InitStaticCache();
+                   InitStaticCache();
 
                 Resolve<ILogger>(container).Log("App started");
             }

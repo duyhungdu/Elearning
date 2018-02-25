@@ -41,7 +41,7 @@ namespace LiteSchool.Repositories
         {
             get
             {
-                return new SqlConnection(ConfigurationManager.ConnectionStrings["ModernMenConnection"].ConnectionString);
+                return new SqlConnection(ConfigurationManager.ConnectionStrings["LiteSchoolConnection"].ConnectionString);
             }
         }
         
